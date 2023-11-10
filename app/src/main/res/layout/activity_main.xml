@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonDecide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="263dp"
+        android:text="Decide pra mim"
+        android:textColorHighlight="#E12323"
+        android:textColorHint="#C55050"
+        android:textColorLink="#AC1616"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerText"
+        app:strokeColor="#CA1111" />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Digite um impasse."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/answerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="18dp"
+        android:autoSizeTextType="none"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>
